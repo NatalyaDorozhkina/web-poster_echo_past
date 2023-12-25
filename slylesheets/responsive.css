@@ -1,0 +1,79 @@
+/* phones */
+@media only screen and (320px <= width <= 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .group1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "A A A D D D"
+      "A A A D D D"
+      "A A A D D D"
+      "B B B E E E"
+      "B B B E E E"
+      "B B B E E E"
+      "C C C F F F"
+      "C C C F F F"
+      "C C C F F F"
+      "one one two two three three"
+      "one one two two three three"
+      "four four five five six six"
+      "four four five five six six"
+      "seven seven eight eight nine nine"
+      "seven seven eight eight nine nine"
+      "ten ten eleven eleven twelve twelve"
+      "ten ten eleven eleven twelve twelve"
+      "thirteen thirteen fourteen fourteen fiveteen fiveteen"
+      "thirteen thirteen fourteen fourteen fiveteen fiveteen"
+      "sixteen sixteen seventeen seventeen eighteen eighteen"
+      "sixteen sixteen seventeen seventeen eighteen eighteen";
+  }
+
+  .group2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "r1 r1 r2 r2 r3 r3"
+      "r1 r1 r2 r2 r3 r3"
+      "r4 r4 r5 r5 r6 r6"
+      "r4 r4 r5 r5 r6 r6"
+      "r7 r7 r8 r8 r9 r9"
+      "r7 r7 r8 r8 r9 r9"
+      "r10 r10 r11 r11 r12 r12"
+      "r10 r10 r11 r11 r12 r12"
+      "r13 r13 r14 r14 r15 r15"
+      "r13 r13 r14 r14 r15 r15"
+      "r16 r16 r17 r17 r18 r18"
+      "r16 r16 r17 r17 r18 r18"
+      "G G G G1 G1 G1"
+      "G G G G1 G1 G1"
+      "G G G G1 G1 G1"
+      "H H H H1 H1 H1"
+      "H H H H1 H1 H1"
+      "H H H H1 H1 H1"
+      "I I I I1 I1 I1"
+      "I I I I1 I1 I1"
+      "I I I I1 I1 I1";
+  }
+
+  .group1,
+  .group2 {
+    margin-top: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    gap: 2vw;
+  }
+
+  .text1,
+  .text2 {
+    font-size: 6vw;
+  }
+
+  .echo_past, 
+  .echo_past1,
+  .echo_past2 {
+    font-size: 38vw;
+  }
+}

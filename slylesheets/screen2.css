@@ -1,0 +1,425 @@
+.second_screen {
+  display: flex;
+}
+
+.group2 {
+  margin-top: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  align-self: start;
+  width: 100%;
+  display: grid;
+  row-gap: 1vw;
+  column-gap: 1vw;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas:
+    "r1 r2 r3     G G  G1 G1"
+    "r4 r5 r6     G G  G1 G1"
+    "r7 r8 r9     H H  H1 H1"
+    "r10 r11 r12  H H  H1 H1"
+    "r13 r14 r15  I I  I1 I1"
+    "r16 r17 r18  I I  I1 I1";
+}
+
+.rectangle2_mini1 {
+  grid-area: r1;
+}
+
+@keyframes changeLetter2 {
+    0%,
+    10% {
+      content: "L";
+    }
+    10%,
+    20% {
+      content: "M";
+    }
+    20%,
+    30% {
+      content: "N";
+    }
+    30%,
+    40% {
+      content: "O";
+    }
+    40%,
+    100% {
+      content: "P";
+    }
+  }
+  
+  .echo_past2::after {
+    content: "L";
+    animation: changeLetter2 3s infinite;
+  }
+
+.rectangle2_mini2 {
+  grid-area: r2;
+}
+
+.rectangle2_mini3 {
+  grid-area: r3;
+}
+
+.rectangle2_mini4 {
+  grid-area: r4;
+}
+
+.rectangle2_mini5 {
+  grid-area: r5;
+  flex-wrap: wrap;
+}
+
+.rectangle2_mini6 {
+  grid-area: r6;
+}
+
+.rectangle2_mini7 {
+  grid-area: r7;
+}
+
+.rectangle2_mini8 {
+  grid-area: r8;
+}
+
+.rectangle2_mini9 {
+  grid-area: r9;
+}
+
+.rectangle2_mini10 {
+  grid-area: r10;
+}
+
+.rectangle2_mini11 {
+  grid-area: r11;
+}
+
+.rectangle2_mini12 {
+  grid-area: r12;
+}
+
+.rectangle2_mini13 {
+  grid-area: r13;
+}
+
+.off-on_group2 {
+  position: relative;
+  width: 95%;
+  height: 39%;
+  background-color: #df9aff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.off-on_group2:hover {
+  .off_on_circle2 {
+    animation-play-state: paused;
+  }
+}
+
+.off_on_circle2 {
+  position: absolute;
+  border-radius: 50%;
+  width: 25%;
+  aspect-ratio: 1 / 1;
+  background-color: #c4ffff;
+  animation: horizontal 1s ease-in-out infinite;
+}
+
+.rectangle2_mini14 {
+  grid-area: r14;
+}
+
+.setbig {
+  width: 67%;
+  height: 67%;
+  animation: rotate 1s ease-in-out infinite;
+}
+
+.setbig:hover{
+    animation-play-state: paused;
+}
+
+.rectangle2_mini15 {
+  grid-area: r15;
+}
+
+.rectangle2_mini16 {
+  grid-area: r16;
+}
+
+.rectangle2_mini17 {
+  grid-area: r17;
+}
+
+.rectangle2_mini18 {
+  grid-area: r18;
+}
+
+.rectangle2_mini18:hover {
+  background-color: #df9aff;
+}
+
+.rectangle2_1 {
+  grid-area: G;
+  display: flex;
+  position: relative;
+}
+
+.shum_gif2 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.layer2 {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.rectangle2_2 {
+  grid-area: G1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rectangle2_3 {
+  grid-area: H;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.off-on_group11,
+.off-on_group22,
+.off-on_group33 {
+  width: 88%;
+  height: 24%;
+  background-color: #c4ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .off_on_circle {
+    width: 15%;
+  }
+}
+
+.off-on_group11:hover {
+  .off_on_circle {
+    animation-play-state: paused;
+  }
+}
+
+.off-on_group22:hover {
+  .off_on_circle {
+    animation-play-state: paused;
+  }
+}
+
+.off-on_group33:hover {
+  .off_on_circle {
+    animation-play-state: paused;
+  }
+}
+
+.off-on_group22 {
+  .off_on_circle {
+    animation: horizontal1 1s ease-in-out infinite;
+  }
+}
+
+@keyframes horizontal1 {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.rectangle2_4 {
+  grid-area: H1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.TV {
+  width: 80%;
+  height: 70%;
+  background-color: #3e287a;
+  margin-bottom: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shum_TV {
+  width: 80%;
+  height: 70%;
+}
+
+.antenas_img {
+  width: 60%;
+  margin-bottom: -5%;
+}
+
+.rectangle2_5 {
+  grid-area: I;
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+
+.plus_img22 {
+  margin-top: 10%;
+  width: 30%;
+  animation: rotate 1s ease-in-out infinite;
+}
+
+.plus_img22:hover {
+    animation-play-state: paused;
+  }
+
+.text2 {
+  font-family: "Fugue Mono";
+  font-size: 3vw;
+  margin-right: 4%;
+  color: #c4ffff;
+}
+
+.rectangle2_6 {
+  grid-area: I1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle2_6:hover {
+  background-color: #3e287a;
+  .rect {
+    background-color: #c4ffff;
+  }
+}
+
+.rectangle2_mini1,
+.rectangle2_mini2,
+.rectangle2_mini3,
+.rectangle2_mini4,
+.rectangle2_mini5,
+.rectangle2_mini6,
+.rectangle2_mini7,
+.rectangle2_mini8,
+.rectangle2_mini9,
+.rectangle2_mini10,
+.rectangle2_mini11,
+.rectangle2_mini12,
+.rectangle2_mini13,
+.rectangle2_mini14,
+.rectangle2_mini15,
+.rectangle2_mini16,
+.rectangle2_mini17,
+.rectangle2_mini18,
+.rectangle2_1,
+.rectangle2_2,
+.rectangle2_3,
+.rectangle2_4,
+.rectangle2_5,
+.rectangle2_6 {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+.rectangle2_mini1,
+.rectangle2_mini2,
+.rectangle2_mini3,
+.rectangle2_mini5,
+.rectangle2_mini6,
+.rectangle2_mini8,
+.rectangle2_mini9,
+.rectangle2_mini10,
+.rectangle2_mini11,
+.rectangle2_mini15,
+.rectangle2_mini16,
+.rectangle2_mini17,
+.rectangle2_1,
+.rectangle2_2,
+.rectangle2_3,
+.rectangle2_4,
+.rectangle2_6 {
+  background-color: #df9aff;
+}
+
+.rectangle2_mini1,
+.rectangle2_mini2,
+.rectangle2_mini3,
+.rectangle2_mini4,
+.rectangle2_mini5,
+.rectangle2_mini6,
+.rectangle2_mini7,
+.rectangle2_mini8,
+.rectangle2_mini9,
+.rectangle2_mini10,
+.rectangle2_mini11,
+.rectangle2_mini12,
+.rectangle2_mini13,
+.rectangle2_mini14,
+.rectangle2_mini15,
+.rectangle2_mini16,
+.rectangle2_mini17,
+.rectangle2_mini18 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle2_mini4,
+.rectangle2_mini7,
+.rectangle2_mini13,
+.rectangle2_mini14,
+.rectangle2_mini18 {
+  background-color: #c4ffff;
+}
+
+/* <-------------> */
+
+.futter_group {
+  position: relative;
+  margin-top: 1vw;
+  width: 100%;
+  height: 14.1vw;
+  overflow: hidden;
+  animation: textik 7s linear infinite;
+}
+
+.text3 {
+  margin-bottom: 0.5%;
+  font-family: "Fugue Mono";
+  color: #c4ffff;
+  font-size: 4vw;
+  white-space: nowrap;
+}
+
+.futter_group:hover {
+  animation-play-state: paused;
+}
+
+@keyframes textik {
+  from {
+    text-indent: -100%;
+  }
+  to {
+    text-indent: 100%;
+  }
+}

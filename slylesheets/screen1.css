@@ -1,0 +1,598 @@
+html,
+body {
+  background-color: #3e287a;
+  overflow-x: hidden;
+}
+
+.first_screen {
+  display: flex;
+}
+
+.group1 {
+  margin-top: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  align-self: start;
+  width: 100%;
+  display: grid;
+  row-gap: 1vw;
+  column-gap: 1vw;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas:
+    "A A D D  one two three"
+    "A A D D  four five six"
+    "B B E E  seven eight nine"
+    "B B E E  ten eleven twelve"
+    "C C F F  thirteen fourteen fiveteen"
+    "C C F F  sixteen seventeen eighteen";
+}
+
+.rectangle1 {
+  grid-area: A;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 19.8%;
+  aspect-ratio: 1 / 1;
+  background-color: #3e287a;
+}
+
+.circle:hover {
+  background-color: #c4ffff;
+}
+
+.row1,
+.row2,
+.row3 {
+  width: 85%;
+  display: flex;
+  align-self: start;
+  justify-content: space-between;
+  margin: 8% 0;
+}
+
+.row1 {
+  animation: vertical2 4s linear infinite;
+  animation-delay: 4s;
+}
+
+.row2 {
+  animation: vertical 4s linear infinite;
+  animation-delay: 2s;
+}
+
+.row3 {
+  animation: vertical 4s linear infinite;
+}
+
+@keyframes vertical {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: 0;
+  }
+}
+
+@keyframes vertical2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(32%);
+  }
+  100% {
+    transform: 0;
+  }
+}
+
+.rectangle2 {
+  grid-area: D;
+  overflow: hidden;
+}
+
+.rectangle3 {
+  grid-area: B;
+}
+
+.rectangle4 {
+  grid-area: E;
+}
+
+.rectangle5 {
+  grid-area: C;
+  align-items: center;
+}
+
+.rectangle5:hover {
+  background-color: #3e287a;
+  .rect {
+    background-color: #c4ffff;
+  }
+}
+
+.rectangle6 {
+  grid-area: F;
+  overflow: hidden;
+}
+
+.rect {
+  width: 15%;
+  height: 70%;
+  margin: 6%;
+  background-color: #3e287a;
+  animation: wave 1s ease-in-out infinite;
+}
+
+.rect:nth-child(2) {
+  height: 75%;
+  animation-delay: 0.2s;
+}
+
+.rect:nth-child(3) {
+  height: 80%;
+  animation-delay: 0.4s;
+}
+
+.rect:nth-child(4) {
+  height: 70%;
+  width: 30%;
+  animation-delay: 0.6s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.rectangle1_mini {
+  grid-area: one;
+}
+
+.rectangle1_mini:hover {
+  background-color: #df9aff;
+}
+
+.rectangle2_mini {
+  grid-area: two;
+}
+
+.rectangle3_mini {
+  grid-area: three;
+}
+
+.rectangle4_mini {
+  grid-area: four;
+}
+
+.off-on_group:hover {
+  .off_on_circle {
+    animation-play-state: paused;
+  }
+}
+
+.off-on_group {
+  width: 95%;
+  height: 39%;
+  background-color: #c4ffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.off_on_rect {
+  width: 90%;
+  height: 20%;
+  background-color: #3e287a;
+}
+
+.off_on_circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 25%;
+  aspect-ratio: 1 / 1;
+  background-color: #df9aff;
+  animation: horizontal 1s ease-in-out infinite;
+}
+
+@keyframes horizontal {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.rectangle5_mini {
+  grid-area: five;
+}
+
+.rectangle5_mini:hover {
+  background-color: #df9aff;
+}
+
+.rectangle6_mini {
+  grid-area: six;
+}
+
+.rectangle7_mini {
+  grid-area: seven;
+}
+
+.rectangle8_mini {
+  grid-area: eight;
+}
+
+.rectangle9_mini {
+  grid-area: nine;
+}
+
+.rectangle9_mini:hover {
+  background-color: #df9aff;
+}
+
+.rectangle10_mini {
+  grid-area: ten;
+}
+
+.rectangle11_mini {
+  grid-area: eleven;
+}
+
+.rectangle12_mini {
+  grid-area: twelve;
+  flex-wrap: wrap;
+}
+
+.set {
+  width: 47%;
+  height: 47%;
+  animation: rotate 1s ease-in-out infinite;
+}
+
+.set:nth-child(2) {
+  animation: krug 2s ease-in-out infinite;
+}
+
+.set:nth-child(3) {
+  animation: krug 2s ease-in-out infinite;
+}
+
+.rectangle13_mini {
+  grid-area: thirteen;
+}
+
+.rectangle14_mini {
+  grid-area: fourteen;
+}
+
+.rectangle15_mini {
+  grid-area: fiveteen;
+}
+
+.rectangle16_mini {
+  grid-area: sixteen;
+}
+
+.rectangle17_mini {
+  grid-area: seventeen;
+}
+
+.rectangle18_mini {
+  grid-area: eighteen;
+}
+
+.rectangle1,
+.rectangle2,
+.rectangle3,
+.rectangle4,
+.rectangle5,
+.rectangle6 {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+.rectangle1,
+.rectangle2,
+.rectangle5 {
+  background-color: #df9aff;
+}
+
+.rectangle3,
+.rectangle4 {
+  background-color: #c4ffff;
+}
+
+.rectangle2,
+.rectangle3,
+.rectangle4,
+.rectangle5,
+.rectangle6 {
+  display: flex;
+  justify-content: center;
+}
+
+.zigzag_img {
+  height: 65%;
+  width: 260%;
+  animation: slide 6s linear infinite;
+}
+
+.zigzag_img:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: 0;
+  }
+}
+
+.rectangle3 {
+  align-items: center;
+}
+
+.rectangle4 {
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.antena_img {
+  width: 49%;
+  margin-top: -46%;
+  margin-right: 36%;
+}
+
+.settings_img {
+  width: 67%;
+  margin-bottom: 64%;
+}
+
+.rectangle6 {
+  background-color: #3e287a;
+}
+
+.text1 {
+  font-family: "Fugue Mono";
+  position: absolute;
+  font-size: 3vw;
+  margin-top: 1%;
+  margin-right: 4%;
+  color: #c4ffff;
+}
+
+.zigzag_img2 {
+  margin-top: 38%;
+  width: 260%;
+  animation: slide 6s linear infinite;
+}
+
+.zigzag_img2:hover {
+  animation-play-state: paused;
+}
+
+.radiomain_img {
+  width: 59%;
+}
+
+.rectangle1_mini,
+.rectangle2_mini,
+.rectangle3_mini,
+.rectangle4_mini,
+.rectangle5_mini,
+.rectangle6_mini,
+.rectangle7_mini,
+.rectangle8_mini,
+.rectangle9_mini,
+.rectangle10_mini,
+.rectangle11_mini,
+.rectangle12_mini,
+.rectangle13_mini,
+.rectangle14_mini,
+.rectangle15_mini,
+.rectangle16_mini,
+.rectangle17_mini,
+.rectangle18_mini {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle1_mini,
+.rectangle5_mini,
+.rectangle9_mini,
+.rectangle14_mini,
+.rectangle15_mini {
+  background-color: #c4ffff;
+}
+
+.arrow_img {
+  width: 75%;
+  animation: rotate 1s ease-in-out infinite;
+}
+
+.arrow2_img {
+  width: 75%;
+  animation: rotate2 1s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate3 {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+.plus_img {
+  width: 59%;
+  animation: rotate 1s ease-in-out infinite;
+}
+
+.plus_img:hover {
+  animation-play-state: paused;
+}
+
+.plus_img2 {
+  width: 59%;
+  animation: rotate3 1s ease-in-out infinite;
+}
+
+.plus_img2:hover {
+  animation-play-state: paused;
+}
+
+.shum_gif {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.rectangle4_mini,
+.rectangle8_mini,
+.rectangle10_mini,
+.rectangle11_mini,
+.rectangle13_mini,
+.rectangle12_mini,
+.rectangle16_mini,
+.rectangle17_mini,
+.rectangle18_mini {
+  background-color: #df9aff;
+}
+
+.disk_img {
+  width: 70%;
+  animation: krug 6s ease-in-out infinite;
+}
+
+@keyframes krug {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.echo_past,
+.echo_past1,
+.echo_past2 {
+  position: absolute;
+  margin-bottom: 0.5%;
+  font-family: "Sometype Mono";
+  color: #3e287a;
+  font-size: 18vw;
+}
+
+@keyframes changeLetter {
+  0%,
+  10% {
+    content: "A";
+  }
+  10%,
+  20% {
+    content: "B";
+  }
+  20%,
+  30% {
+    content: "C";
+  }
+  30%,
+  40% {
+    content: "D";
+  }
+  40%,
+  100% {
+    content: "E";
+  }
+}
+
+.echo_past1::after {
+  content: "A";
+  animation: changeLetter 3s infinite;
+}
+/* <-------------> */
+
+.strelka_group {
+  margin-top: 1vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  animation: strelka_animation 3s linear infinite;
+}
+
+.strelka_img {
+  width: 100%;
+}
+
+.strelka_group:hover {
+  animation-play-state: paused;
+}
+
+@keyframes strelka_animation {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
